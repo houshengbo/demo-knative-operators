@@ -2,7 +2,7 @@
 
 The following steps apply to Mac environment.
 
-## Install Docker-destop with Kubernetes enabled.
+## Install Docker-desktop with Kubernetes enabled.
 
 Find the tutorial [here](https://docs.docker.com/docker-for-mac/install/).
 
@@ -94,6 +94,13 @@ kubectl get pods --namespace istio-system
 ```
 
 If istio is installed correctly, we should be able to see the following information:
+
 ![](images/istio-pods.png)
 
 The flag -w can be added to the kubectl get commands to view the pod status in realtime.
+
+## Demos
+
+After everything is set up, go through the following demos:
+
+- [Basic features](basic-functionalities)

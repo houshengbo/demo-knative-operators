@@ -9,7 +9,7 @@ Since it is still in the early stage of developing Knative operators, and we hav
 Serving Operator and Knative Eventing Operator. This repository is going to provide useful demos about how
 you can use the Knative operators and what you can do with the them.
 
-There are two directories in this repository: [knative-serving-operator](knative-serving-operator) and [knative-eventing-operator](knative-serving-operator), where
+There are two directories in this repository: [knative-serving-operator](knative-serving-operator) and [knative-eventing-operator](knative-eventing-operator), where
 you can find demos respectively for each operator.
 
 ## How Operator Works

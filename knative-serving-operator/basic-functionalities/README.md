@@ -13,7 +13,7 @@ kubectl create namespace test-serving
 
 ## Install Serving Operator
 
-You can choose to install Serving Operator either from the latest released or from the source code.
+You can choose to install Serving Operator either from the latest released.
 
 ### Install current release
 

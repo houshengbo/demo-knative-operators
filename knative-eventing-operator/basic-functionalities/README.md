@@ -3,6 +3,11 @@
 You can find the official released artifacts of Knative Eventing Operator at the [release page](https://github.com/knative/eventing-operator/releases).
 The latest release is v0.10.0.
 
+## Demo Video
+
+To view the full video of the demo of basic features of Knative Eventing Operator, click on the following video:
+[![](http://img.youtube.com/vi/E-3fwOKtT-w/0.jpg)](http://www.youtube.com/watch?v=E-3fwOKtT-w "")
+
 ## Create a test namespace for eventing operator
 
 We use the namespace test-eventing.

@@ -104,3 +104,4 @@ The flag -w can be added to the kubectl get commands to view the pod status in r
 After everything is set up, go through the following demos:
 
 - [Basic features](basic-functionalities)
+- [Install custom serving manifest](install-custom-serving-manifest)

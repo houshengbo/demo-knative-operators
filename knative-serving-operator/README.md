@@ -105,3 +105,4 @@ After everything is set up, go through the following demos:
 
 - [Basic features](basic-functionalities)
 - [Install custom serving manifest](install-custom-serving-manifest)
+- [Set up custom ingress gateway](setup-custom-ingress-gateway)

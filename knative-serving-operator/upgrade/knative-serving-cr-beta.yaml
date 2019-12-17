@@ -1,0 +1,15 @@
+apiVersion: operator.knative.dev/v1beta1
+kind: KnativeServing
+metadata:
+  name: knative-serving
+spec:
+  version: 0.9.0
+  config-beta:
+    defaults:
+      revision-timeout-seconds: "300"  # 5 minutes
+    autoscaler:
+      stable-window: "60s"
+    deployment:
+      registriesSkippingTagResolving: "ko.local,dev.local"
+    logging:
+      loglevel.controller: "debug"

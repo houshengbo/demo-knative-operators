@@ -207,7 +207,7 @@ As you see, we use `custom: ingressgateway` as one of the match labels, and the 
 We are going to change the operator CR based on these two names. 
 
 There are some changes you need to do with the CR to be created or updated. We need to change the label selector
-of the gateway to `custom: ingressgateway`, and update the gateway ConfigMap into
+of the gateway to `custom: ingressgateway`, and update the istio ConfigMap by setting the value
 `custom-ingressgateway.istio-system.svc.cluster.local` for the key `gateway.knative-ingress-gateway` as below:
 
 ```aidl
@@ -226,8 +226,8 @@ spec:
     selector:
       custom: ingressgateway
   config:
-    gateway:
-      gateway.knative-ingress-gateway: "custom-ingressgateway.istio-system.svc.cluster.local"
+    istio:
+      gateway.knative-serving.knative-ingress-gateway: "custom-ingressgateway.istio-system.svc.cluster.local"
 ```
 
 You can access this file [here](example-cr-custom-ingress-gateway.yaml). By applying this yaml file, you

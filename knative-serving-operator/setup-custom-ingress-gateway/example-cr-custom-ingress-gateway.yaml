@@ -13,5 +13,5 @@ spec:
     selector:
       custom: ingressgateway
   config:
-    gateway:
-      gateway.knative-ingress-gateway: "custom-ingressgateway.istio-system.svc.cluster.local"
+    istio:
+      gateway.knative-serving.knative-ingress-gateway: "custom-ingressgateway.istio-system.svc.cluster.local"

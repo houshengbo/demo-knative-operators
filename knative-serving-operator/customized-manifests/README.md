@@ -1,20 +1,12 @@
-# Demo of leveraging customized manifests to install other ingresses
+# Demo of leveraging customized manifests to configure the security context for the deployment
 
-## Use Kourier instead of istio
+The file activator-0.21.yaml contains the expected resource with the expected security context.
+It has been published at `https://github.com/houshengbo/demo-knative-operators/releases/download/master/activator-0.21.yaml`
 
-Check the content of `knative-serving-customized-kourier.yaml`.
+In addition, I would like to install network certificate manager as well.
 
-The network ingress plugin is installed under the same namespace as the Knative Serving.
+Apply the serving CR to install serving with the expected resource.
 
-Fetch the External IP or CNAME:
-
-```
-kubectl --namespace knative-serving get service kourier
-```
-
-
-```
-kn service create hello \
-      --image gcr.io/knative-samples/helloworld-go \
-      --env TARGET=Knative
+```aidl
+kubectl apply -f knative-serving-customized-additional.yaml
 ```

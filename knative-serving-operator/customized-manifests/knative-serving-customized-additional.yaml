@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: knative-serving
+---
+apiVersion: operator.knative.dev/v1alpha1
+kind: KnativeServing
+metadata:
+  name: knative-serving
+  namespace: knative-serving
+spec:
+  version: "0.21"
+  additionalManifests:
+    - URL: https://github.com/houshengbo/demo-knative-operators/releases/download/master/activator-0.21.yaml
+    - URL: https://github.com/knative-sandbox/net-certmanager/releases/download/v0.21.0/net-certmanager.yaml
